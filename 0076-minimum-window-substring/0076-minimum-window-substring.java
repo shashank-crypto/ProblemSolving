@@ -15,7 +15,7 @@ class Solution {
                 map.put(rChar, map.get(rChar)-1);
                 if(map.get(rChar)==0) matched--;
             }
-            while(l<=r && matched==0){
+            while(matched==0){
                 if(minSize>r-l+1){
                     minSize=r-l+1;
                     startIndex=l;
